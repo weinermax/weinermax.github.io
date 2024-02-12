@@ -1,0 +1,96 @@
+@import url(“https://fonts.googleapis.com/css?family=Poppins”);
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Poppins, sans-serif;
+}
+
+a {
+    color:hotpink;
+    text-decoration: none;
+}
+
+a:visited {
+    color:hotpink;
+}
+
+a:hover {
+    /* color: linear-gradient(to right, red , blue); */
+    background: linear-gradient(90deg, rgba(238,8,181,1) 0%, rgba(112,116,220,1) 100%);
+    text-shadow: none;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+h1 {
+    padding: 10px;
+    font-size: 13rem;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    margin: 10px 20px 0 20px;
+    height: 100%;
+    z-index: 0;
+}
+
+.gallery .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32.5%;
+    margin: 0px 10px 0px 10px;
+}
+.gallery .column img {
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.photo-layout p {
+    text-align: center;
+    display: block;
+    padding-bottom: 10px;
+}
+
+img:hover {
+    transform:scale(1.05);
+}
+
+img {
+    transition: transform 0.15s;
+}
+
+#inspector {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 0px;
+    background-size: contain;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media only screen and (max-width: 800px) {
+    .gallery {
+        flex-direction: column;
+    }
+    .gallery .column {
+        width: 100%;
+        margin: auto;
+    }
+
+    img:hover {
+        transform:scale(1);
+    }
+}

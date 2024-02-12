@@ -1,0 +1,20 @@
+.gallery:active img, .gallery:focus img
+{
+
+    flex-direction: column;
+    /* -webkit-transform:scale(2);
+    transform:scale(2); */
+    /* max-width: 50%; */
+}
+.gallery .column:active img, .gallery .column:focus img {
+    width: 150%;
+}
+
+img {
+    transition:transform 0s ease;
+}
+
+img:hover {
+    transform:scale(1.05);
+    background-color: black;
+}
