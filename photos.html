@@ -5,35 +5,44 @@
     <title>Photos</title>
  </head>
  <body>
-    <div class="photo-layout">
-        <div class="gallery">
-            <div class="column">
-                <img src="assets/untitled_1.jpg" alt="untitled_1">
-                <img src="assets/untitled_10.jpg" alt="untitled_10">
-                <img src="assets/untitled_9.jpg" alt="untitled_9">
-                <img src="assets/untitled_6.jpg" alt="untitled_6">
-                <img src="assets/untitled_16.jpg" alt="untitled_16">
-                <img src="assets/untitled_15.jpg" alt="untitled_15">
-            </div>
-            <div class="column">
-                <img src="assets/untitled_3.jpg" alt="untitled_3">
-                <img src="assets/untitled_4.jpg" alt="untitled_4">
-                <img src="assets/untitled_5.jpg" alt="untitled_5">
-                <img src="assets/lounge.jpg" alt="lounge">
-                <img src="assets/untitled_2.jpg" alt="untitled_2">
-                <img src="assets/untitled_12.jpg" alt="untitled_12">
-            </div>
-            <div class="column">
-                <img src="assets/untitled_11.jpg" alt="untitled_11">
-                <img src="assets/untitled_7.jpg" alt="untitled_7">
-                <img src="assets/untitled_8.jpg" alt="untitled_8">
-                <img src="assets/untitled_13.jpg" alt="untitled_13">
-                <img src="assets/untitled_14.jpg" alt="untitled_14">
-                
+    <div class="split">
+        <div class="sidebar">
+            <span class="material-symbols-outlined">
+                <a href="index.html">arrow_back</a>
+            </span>
+        </div>
+        <div class="content">
+            <div class="photo-layout">
+                <div class="gallery">
+                    <div class="column">
+                        <img src="assets/untitled_1.jpg" alt="untitled_1">
+                        <img src="assets/untitled_10.jpg" alt="untitled_10">
+                        <img src="assets/untitled_9.jpg" alt="untitled_9">
+                        <img src="assets/untitled_6.jpg" alt="untitled_6">
+                        <img src="assets/untitled_16.jpg" alt="untitled_16">
+                        <img src="assets/untitled_15.jpg" alt="untitled_15">
+                    </div>
+                    <div class="column">
+                        <img src="assets/untitled_3.jpg" alt="untitled_3">
+                        <img src="assets/untitled_4.jpg" alt="untitled_4">
+                        <img src="assets/untitled_5.jpg" alt="untitled_5">
+                        <img src="assets/lounge.jpg" alt="lounge">
+                        <img src="assets/untitled_2.jpg" alt="untitled_2">
+                        <img src="assets/untitled_12.jpg" alt="untitled_12">
+                    </div>
+                    <div class="column">
+                        <img src="assets/untitled_11.jpg" alt="untitled_11">
+                        <img src="assets/untitled_7.jpg" alt="untitled_7">
+                        <img src="assets/untitled_8.jpg" alt="untitled_8">
+                        <img src="assets/untitled_13.jpg" alt="untitled_13">
+                        <img src="assets/untitled_14.jpg" alt="untitled_14">
+                        
+                    </div>
+                </div>
+                <div id="inspector" onclick="this.style.display='none';"></div>
+                <p>Copyright Max Weiner 2024</p>
             </div>
         </div>
-        <div id="inspector" onclick="this.style.display='none';"></div>
-        <p>Copyright Max Weiner 2024</p>
     </div>
     <script>
         const imgs = document.querySelectorAll('.gallery img');
